@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Restablecimiento básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilos para encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 18px;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 14px;
+}
+
+h5 {
+    font-size: 1.25em;
+    margin-bottom: 12px;
+}
+
+h6 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para párrafos */
+p {
+    margin-bottom: 15px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para listas */
+ul,
+ol {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Estilos para formularios */
+form {
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+button {
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Estilos para contenedores */
+div {
+    margin-bottom: 1rem;
+}
+
+span {
+    color: #0066cc;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para códigos y preformatados */
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.formulario {
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 400px;
+    align-content: center;
+    gap: 1rem;
+}
+
+.caja {
+    border: solid 2px #005bb550;
+    border-radius: 5px;
+    padding: 5%;
+}
+
+/* como los div tienen 20 de margin-botton al primer div hijo del form le doy un margin top para que quede igual */
+.formulario>.caja>.form__div_label:first-child {
+    margin-top: 20px;
+}
+
+.form__label {
+    width: 100%;
+    color: #005bb5;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.form__div_label {
+    display: grid;
+    gap: 8%;
+
+}
+
+.form__input {
+    border-radius: 10px;
+}
+
+.form__boton {
+    max-width: 255px;
+    margin: 0 auto;
+}
+
+
+.error {
+    display: none;
+    color: red;
+}
+/* 
+estilos de la pagina KIDS */
+
+.card{ 
+    display: grid;
+    justify-items: center;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    gap: 10%;
+
+}
+.card__imagen{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.card__contenedor{
+    
+
+}
+
+.card__titulo{
+    font-family: "Roboto";
+    font-weight: 600;
+
+}
+
+.card__description{
+    font-family: "Roboto";
+    font-weight: 400;
+    width: 300px;
+    margin:0 auto;
+    text-align: center;
+
+}
